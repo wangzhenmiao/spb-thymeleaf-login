@@ -10,12 +10,12 @@
     <script type="text/javascript">
         $(function(){
             $("#loginbtn").click(function(){
-                var loginName = $("#loginName");
+                var loginNameJsVar = $("#loginNameId");
                 var password = $("#password");
                 var msg = "";
-                if(loginName.val() == ""){
+                if(loginNameJsVar.val() == ""){
                     msg = "登录名不能为空!";
-                    loginName.focus();
+                    loginNameJsVar.focus();
                 }else if(password.val() == ""){
                     msg = "密码不能为空!";
                     password.focus();
@@ -51,7 +51,7 @@
                         <span class="input-group-addon"><i
                                 class="glyphicon glyphicon-user"></i></span> <input
                             class="form-control" placeholder="用户名/邮箱" type="text"
-                            name="loginName" id="loginName" />
+                            name="loginNameRequestParm" id="loginNameId" />
                     </div>
                 </div>
                 <div class="form-group">
